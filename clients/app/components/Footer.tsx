@@ -1,6 +1,17 @@
-import React from 'react'
-import { FcompanyData, FconnectData, FproductsData } from '../../utils/Footer'
-import Link from 'next/link'
+import Link from 'next/link';
+import { footerData } from '../../utils/Footer';
+
+const FooterLinks = ({ title, links }:any) => (
+  <div>
+    <h1 className='text-xl font-bold text-white pb-10'>{title}</h1>
+    {links.map((item:any, index:any) => (
+      <Link href={item.link} key={index}>
+        <h1 className='text-md font-bold text-white text-start py-1 hover:underline'>{item.name}</h1>
+      </Link>
+    ))}
+  </div>
+);
+
 
 export default function Footer() {
   return (
@@ -8,45 +19,11 @@ export default function Footer() {
           <div className="pt-10 max-w-6xl mx-auto">
             <div className='grid grid-cols-4 pb-10'>
               <div>
-                <h1 className='text-3xl font-bold text-white'>Blogr</h1>
+                <img src="/images/logo.svg" alt="" width={100} height={100} />
               </div>
-              <div>
-                <h1 className='text-xl font-bold text-white pb-10'>Product</h1>
-                {
-                  FproductsData.map((item, index) => {
-                    return (
-                      <Link href={item.link} key={index}>
-                        <h1 className='text-md font-bold text-white text-start py-1 hover:underline'>{item.name}</h1>
-                      </Link>
-                    )
-                  })
-                }
-                
-              </div>
-              <div>
-                <h1 className='text-xl font-bold text-white pb-10'>Company</h1>
-                {
-                  FcompanyData.map((item, index) => {
-                    return (
-                      <Link href={item.link} key={index}>
-                        <h1 className='text-md font-bold text-white text-start py-1 hover:underline'>{item.name}</h1>
-                      </Link>
-                    )
-                  })
-                }
-              </div>
-              <div>
-                <h1 className='text-xl font-bold text-white pb-10'>connect</h1>
-                    {
-                        FconnectData.map((item, index) => {
-                            return (
-                                <Link href={item.link} key={index}>
-                                    <h1 className='text-md font-bold text-white text-start py-1 hover:underline'>{item.name}</h1>
-                                </Link>
-                            )
-                        })
-                    }
-              </div>
+              {footerData.map((section, index) => (
+               <FooterLinks key={index} title={section?.title} links={section?.links} />
+          ))}
             </div>
           </div>
         </div>    

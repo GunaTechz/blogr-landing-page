@@ -1,4 +1,6 @@
 import type { Config } from 'tailwindcss'
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 
 const config: Config = {
   content: [
@@ -8,6 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        overpass: ['Overpass', ...defaultTheme.fontFamily.sans],
+        ubuntu: ['Ubuntu', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         // Primary Colors
         'light-red': 'hsl(356, 100%, 66%)',

@@ -40,10 +40,10 @@ Background gradient - body:
 
 - Font size: 16px
 
-### Fonts
+    ### Fonts
 
-- Family: [Overpass](https://fonts.google.com/specimen/Overpass?preview.text_type=custom)
-- Weights: 300, 600
+    - Family: [Overpass](https://fonts.google.com/specimen/Overpass?preview.text_type=custom)
+    - Weights: 300, 600
 
-- Family: [Ubuntu](https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom)
-- Weights: 400, 500, 700
+    - Family: [Ubuntu](https://fonts.google.com/specimen/Ubuntu?preview.text_type=custom)
+    - Weights: 400, 500, 700

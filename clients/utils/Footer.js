@@ -1,56 +1,29 @@
-export const FproductsData = [
+export const footerData = [
     {
-        name : "Overview",
-        link : "#"
+      title: 'Product',
+      links: [
+        { name: 'Overview', link: '#' },
+        { name: 'Pricing', link: '#' },
+        { name: 'Marketplace', link: '#' },
+        { name: 'Features', link: '#' },
+        { name: 'Integrations', link: '#' },
+      ],
     },
     {
-        name : "Pricing",
-        link : "#"
+      title: 'Company',
+      links: [
+        { name: 'About', link: '#' },
+        { name: 'Team', link: '#' },
+        { name: 'Blog', link: '#' },
+        { name: 'Careers', link: '#' },
+      ],
     },
     {
-        name : "Marketplace",
-        link : "#"
+      title: 'Connect',
+      links: [
+        { name: 'Contact', link: '#' },
+        { name: 'Newsletter', link: '#' },
+        { name: 'LinkedIn', link: '#' },
+      ],
     },
-    {
-        name : "Features",
-        link : "#"
-    },
-    {
-        name : "Integrations",
-        link : "#"
-    }
-];
-
-export const FcompanyData = [
-    {
-        name : "About",
-        link : "#"
-    },
-    {
-        name : "Team",
-        link : "#"
-    },
-    {
-        name : "Blog",
-        link : "#"
-    },
-    {
-        name : "Careers",
-        link : "#"
-    }
-]
-
-export const FconnectData = [
-    {
-        name : "Contact",
-        link : "#"
-    },
-    {
-        name : "Newsletter",
-        link : "#"
-    },
-    {
-        name : "LinkedIn",
-        link : "#"
-    }
-]
+  ];
