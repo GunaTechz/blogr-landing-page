@@ -1,4 +1,6 @@
+"use client";
 import React from 'react';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function ArtInfrastructure() {
   return (
@@ -18,15 +20,19 @@ export default function ArtInfrastructure() {
     >
       <div className='max-w-6xl mx-auto grid grid-cols-2'>
         <div className='flex items-center justify-end'>
-          <img src="./images/illustration-phones.svg" alt="" className='max-w-full' style={{ height: 'auto' }} />
+          <AnimationOnScroll animateOnce animateIn="animate__fadeInLeft">
+            <img src="./images/illustration-phones.svg" alt="" className='max-w-full' style={{ height: 'auto' }} />
+          </AnimationOnScroll>
         </div>
         <div className='flex flex-col justify-center'>
+          <AnimationOnScroll animateOnce animateIn="animate__fadeInRight">
           <h1 className='text-3xl font-bold font-overpass text-white text-start'>
             State of the Art Infrastructure
           </h1>
           <p className='text-[18px] font-overpass text-grayish-blue pt-5 text-justify'>
             With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
           </p>
+          </AnimationOnScroll>
         </div>
       </div>
     </div>
