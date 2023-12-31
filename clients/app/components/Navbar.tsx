@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { footerData } from '@/utils/Footer';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Navbar() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -14,6 +15,8 @@ export default function Navbar() {
     <div className="w-full h-auto bg-gradient-to-br from-body-gradient-start to-body-gradient-end bg-no-repeat bg-cover bg-center" style={{
       backgroundImage: "url('./images/bg-pattern-intro-mobile.svg'), linear-gradient(135deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%))",
       backgroundPosition: '34% 33%',
+      backgroundSize: 'cover',
+      height: '40rem',
       borderBottomLeftRadius: '6rem',
     }}>
       <div className='max-w-6xl mx-auto py-12 flex items-center justify-between'>
@@ -48,14 +51,13 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className='text-center p-14'>
+      <div className='text-center py-16'>
         <h1 className='text-6xl font-overpass font-bold text-white'>
         A modern publishing platform
         </h1>
-        <p className='text-lg font-ubuntu font-bold text-white py-4'>
+        <p className='text-lg font-ubuntu font-bold text-white py-8'>
         Grow your audience and build your online brand
         </p>
-
         <div className='p-11'>
         <button className="text-xl font-ubuntu font-bold px-6 py-3 rounded-full bg-white text-intro-gradient-end shadow-md hover:bg-grayish-blue hover:text-white hover:shadow-lg mr-2">Start for Free</button>
         <button className="text-xl font-bold font-ubuntu text-white px-6 py-3 rounded-full bg-greyish-blue hover:text-intro-gradient-end shadow-md hover:bg-grayish-blue text-white hover:shadow-lg">Learn More</button>
