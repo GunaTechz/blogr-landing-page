@@ -39,3 +39,14 @@ export const footerData = [
       desc: `Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionlity you're in full control.`,
     }
   ]
+
+  export const artInfrastructureData = [
+    {
+      title: 'Free, open, simple',
+      desc: 'Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.',
+    },
+    {
+      title: 'Powerful tooling',
+      desc: 'Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.',
+    }
+  ]
