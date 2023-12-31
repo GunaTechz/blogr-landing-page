@@ -1,4 +1,6 @@
+"use client";
 import { artInfrastructureData } from '@/utils/Footer';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function FreeOpenSource() {
   return (
@@ -7,12 +9,14 @@ export default function FreeOpenSource() {
         <div className='flex flex-col md:flex-row items-center justify-center'>
           <div className='w-full md:w-1/2 overflow-hidden'>
             <div className='relative' style={{ left: '-36%' }}>
+              <AnimationOnScroll animateOnce animateIn="animate__fadeInLeft">
               <img
                 src="/images/illustration-laptop-desktop.svg"
                 alt=""
                 className='h-auto'
                 style={{ maxWidth: 'none' }}
               />
+              </AnimationOnScroll>
             </div>
           </div>
           <div className='w-full md:w-1/2 max-w-xl mx-auto md:pl-0 pr-8 items-start'>
