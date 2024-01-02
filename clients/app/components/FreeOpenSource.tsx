@@ -4,17 +4,16 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function FreeOpenSource() {
   return (
-    <div className='p-8 md:pb-24'>
+    <div className='py-8 md:pb-24 mx-10'>
       <div className='mt-10'>
         <div className='flex flex-col md:flex-row items-center justify-center'>
           <div className='w-full md:w-1/2 overflow-hidden'>
-            <div className='relative' style={{ left: '-15%', maxWidth: '80%' }}>
+            <div className='relative'>
               <AnimationOnScroll animateOnce animateIn='animate__fadeInLeft'>
                 <img
                   src='/images/illustration-laptop-desktop.svg'
                   alt=''
-                  className='h-auto'
-                  style={{ maxWidth: 'none' }}
+                  className='h-auto w-full lg:w-[150%] left-[-15%] object-contain'
                 />
               </AnimationOnScroll>
             </div>
