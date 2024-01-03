@@ -15,7 +15,8 @@ export default function ArtInfrastructure() {
         </div>
         <div className='flex flex-col justify-center md:px-8 lg:px-16'>
           <AnimationOnScroll animateOnce animateIn='animate__fadeInRight'>
-            <h1 className='text-xl md:text-3xl whitespace-nowrap lg:text-4xl font-bold font-overpass text-white text-center md:text-start'>
+            <h1 className='text-xl md:text-3xl whitespace-nowrap
+             lg:text-4xl font-bold font-overpass text-white text-center md:text-start'>
               State of the Art Infrastructure
             </h1>
             <p className='text-sm md:text-lg lg:text-xl font-overpass text-grayish-blue lg:pt-5  text-center lg:text-justify'>
