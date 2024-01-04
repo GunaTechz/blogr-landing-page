@@ -1,8 +1,7 @@
 "use client";
-import { useEffect, useRef, useState } from 'react';
-import Link from 'next/link';
 import { footerData } from '@/utils/Footer';
-import { AnimationOnScroll } from 'react-animation-on-scroll';
+import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
 import { NavbarContainer } from './styles';
 
 export default function Navbar() {
@@ -27,6 +26,8 @@ export default function Navbar() {
       window.removeEventListener('click', closeModalOnOutsideClick);
     }
   }, [openModal]);
+
+
   return (
     <NavbarContainer>
     <div className="w-full h-auto">
@@ -58,7 +59,7 @@ export default function Navbar() {
         </div>
 
         <div className='hidden md:flex items-center'>
-          <button className="text-xl font-overpass font-bold text-white px-6 hover:underline">Login</button>
+          <button className="text-xl font-overpass font-bold text-white px-6 hover:underline hover:text-very-dark-grayish-blue">Login</button>
           <button className="text-xl font-bold font-overpass px-6 py-3 rounded-full bg-white text-intro-gradient-end shadow-md hover:bg-grayish-blue hover:text-white hover:shadow-lg">sign up</button>
         </div>
       </div>

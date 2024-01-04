@@ -1,0 +1,7 @@
+{
+    "watch": ["*"],
+    "ext": ".ts,.js",
+    "exec": "npx ts-node index.ts",
+    "ignore": ["node_modules", "public", "*.log", "build"]
+
+  }
